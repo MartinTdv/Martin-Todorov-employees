@@ -1,0 +1,9 @@
+﻿@model UploadInputModel
+
+<form method="post" enctype="multipart/form-data" asp-action="Upload">
+    <div class="form-group">
+        <label for="employeesDataInput">Upload CSV file with employees data</label>
+        <input id="employeesDataInput" class="form-control" placeholder="upload file" asp-for="@Model.EmployeesData">
+    </div>
+    <button type="submit" class="btn btn-primary">Upload</button>
+</form>

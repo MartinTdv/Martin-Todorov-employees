@@ -1,0 +1,24 @@
+﻿@model IEnumerable<EmployeePairViewModel>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Employee One</th>
+            <th scope="col">Employee Two</th>
+            <th scope="col">Project</th>
+            <th scope="col">Days Worked Together</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pair in Model)
+         {
+             <tr>
+                 <td>@pair.EmployeeOneId</td>
+                 <td>@pair.EmployeeTwoId</td>
+                 <td>@pair.ProjectId</td>
+                 <td>@pair.DaysWorkedTogether</td>
+             </tr>
+         }
+    </tbody>
+</table>
+
